@@ -1,0 +1,38 @@
+.news {
+    display: none;
+
+    @media (min-width: $screen-min-desktop) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__text {
+            width: 600px;
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: row;
+            padding: 96px 0;
+        }
+
+        &__card {
+            padding: 20px;
+            width: 251px;
+            height: 452px;
+            background-image: url(../images/mediabg-cover.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: $white;
+            margin-inline: 10px;
+            div {
+                margin-top: 272px;
+                text-align: left;
+                h4 {
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.main__features {
+    .main__head {
+        order: 1;
+    }
+    display: flex;
+    flex-direction: column;
+}
+
+.main__featuresBoxWrap {
+    order: 3;
+    @media(min-width: $screen-min-desktop) {
+        display: flex;
+        width: 869px;
+        margin: 80px auto 0 auto;
+    }
+}
+
+.main__featuresVideo {
+    order: 2;
+    width: 100%;
+    margin: 50px 0;
+    >div {
+        overflow: hidden;
+        filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+        max-width: 1177px;
+        border-radius: 40px;
+        margin: 0 auto;
+    }
+    @media(min-width: $screen-min-desktop) {
+        order: 3;
+    }
+}
+
+.main__featuresBox {
+    max-width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @media(min-width: $screen-min-desktop) {
+        margin-bottom: 0;
+    }
+}

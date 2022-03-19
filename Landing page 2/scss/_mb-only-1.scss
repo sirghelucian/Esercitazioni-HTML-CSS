@@ -1,0 +1,14 @@
+.mobile-only-1 {
+    @include padding-inline-mobile;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 40%;
+        margin-bottom: 60px;
+    }
+
+    @media (min-width: $screen-min-desktop) {
+        display: none;
+    }
+}

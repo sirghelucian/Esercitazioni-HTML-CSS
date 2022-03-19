@@ -1,0 +1,44 @@
+.client {
+    padding-bottom: 150px;
+    @include padding-inline-mobile;
+
+    &__section-text {
+        h2 {
+            display: none;
+        }
+        padding-bottom: 60px;
+    }
+
+    &__card {
+        background-color: $white;
+        border: 1px solid $grey-border;
+        border-radius: 5px;
+        padding: 40px 35px;
+        img {
+            width: 96px;
+        }
+        #star {
+            width: 146px;
+        }
+        h3 {
+            margin-block: 15px;
+        }
+    }
+
+    @media (min-width: $screen-min-desktop) {
+        @include padding-inline-desktop;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__section-text {
+            width: 607px;
+            h2 {
+                display: block;
+            }
+        }
+        &__card {
+            width: 749px;
+        }
+    }
+}

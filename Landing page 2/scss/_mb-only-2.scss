@@ -1,0 +1,45 @@
+.mobile-only-2 {
+    background: rgb(0, 71, 128);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 71, 128, 1) 0%,
+        rgba(215, 20, 128, 1) 100%
+    );
+    height: 212px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: $white;
+    }
+
+    div {
+        width: 337px;
+        height: 58px;
+        background-color: $white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        margin-right: 0;
+
+        input {
+            border: none;
+            font-size: $font-p-size;
+        }
+
+        [type="submit"] {
+            background-color: $primary-color;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: white;
+        }
+    }
+
+    @media (min-width: $screen-min-desktop) {
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+.g-button {
+    color: $color-button-text;
+    background-color: $color-button-bg;
+    font-size: 14px;
+    line-height: 1em;
+    padding: 18px 38px;
+    border-radius: 37px;
+    text-decoration: none;
+    display: inline-block;
+    &--rectangular {
+        border-radius: 5px;
+        width: 180px;
+    }
+    &--inverted {
+        background-color: $color-button-text;
+        color: $color-button-bg;
+        border: 1px solid $color-button-bg;
+    }
+}

@@ -1,0 +1,115 @@
+header {
+    background: url('../images/bg-header-mobile.png') no-repeat transparent scroll;
+    background-position: bottom center;
+    color: $white;
+
+    @media(min-width: 418px) {
+        background-image: url('../images/bg-header.png');
+    }
+}
+
+.header {
+    &__navbar {
+        max-width: 1210px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > div:first-child {
+            display: flex;
+            align-items: center;
+
+            @media(max-width: $screen-max-tablet) {
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        
+
+        ul {
+            @include horizontal-list;
+        }
+
+        @media(max-width: $screen-max-tablet) {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+    }
+
+    &__menu {
+        font-size: 15px;
+        line-height: 18px;
+        > img {
+            @media(min-width: $screen-min-desktop) {
+                display: none;
+            }
+        }
+        > nav {
+            display: none;
+            a {color: inherit;}
+            @media(min-width: $screen-min-desktop) {
+                display: inline-block;
+            }
+        }
+
+        @media(min-width: $screen-min-desktop) {
+            order: -1;
+        }
+    }
+
+    &__socials {
+        display: none;
+
+        img {vertical-align: middle;}
+
+        ul {
+            > li {
+                margin-right: 24px;
+            }
+        }
+
+        @media(min-width: $screen-min-desktop) {
+            display: inline-block;
+        }
+    }
+
+    &__hero {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 128px;
+        padding-left: 16px;
+        padding-right: 16px;
+        
+        .header__herobutton {
+            margin-top: 40px;
+            display: inline-block;
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+
+        @media(min-width: $screen-min-desktop) {
+            padding-top: 80px;
+            padding-bottom: 218px;
+
+            h1 {
+                max-width: 700px;
+            }
+        }
+
+        @media(max-width: $screen-max-tablet) {
+            h1 {
+                font-size: 48px;
+                line-height: 55px;
+                max-width: 350px;
+                font-family: $font-base;
+                font-weight: normal;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: $font-h1-size;
+    line-height: 80px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: $font-h2-size;
+    line-height: 57px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: $font-h3-size;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: $font-h4-size;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: $font-h5-size;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+p {
+    font-size: $font-p-size;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+h3,
+h5 {
+    letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h4,
+p {
+    letter-spacing: 0.2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $title-color;
+}

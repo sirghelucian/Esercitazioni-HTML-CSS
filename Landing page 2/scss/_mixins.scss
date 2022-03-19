@@ -1,0 +1,35 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin horizontal-list {
+    @include reset-list;
+
+    li {
+        margin-left: -2px;
+        margin-right: 2em;
+        display: inline-block;
+    }
+}
+
+@mixin normalize {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin padding-inline-mobile {
+    padding-inline: 35px;
+}
+
+@mixin padding-inline-desktop {
+    padding-inline: 195px;
+}
+
+@mixin flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
